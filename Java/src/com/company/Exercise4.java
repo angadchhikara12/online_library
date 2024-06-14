@@ -62,6 +62,11 @@ public class Exercise4 {
         } else if (var == "Issue a book") {
             if (lib.ib.length >= 180){
                 System.out.println("Sorry, we are out of books! Please come back later");
+            } else{
+                System.out.print("Please enter the title of the book here:    ");
+                String bookName = sc.next();
+                issueBooks(bookName);
+                System.out.printf("All right, You checked out the book %s! Have a great day😊");
             }
         }
     }
